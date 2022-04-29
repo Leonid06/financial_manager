@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/history_button_name"
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history_book"/>
+    <item android:title="@string/home_button_name"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        />
+    <item android:title="@string/statistics_button_name"
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/statistics_icon"/>
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bar"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.HomeFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_category"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.HistoryFragment"
+        android:label="История"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.AddCategoryFragment"
+        android:label="Добавление категории"
+        tools:layout="@layout/fragment_add_category" >
+        <action
+            android:id="@+id/action_category_to_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.StatsFragment"
+        android:label="Статистика"
+        tools:layout="@layout/fragment_stats">
+        <!--        <action-->
+        <!--            android:id="@+id/action_statsFragment1_to_statsFragment2"-->
+        <!--            app:destination="@id/statsFragment2" />-->
+        <action
+            android:id="@+id/action_navigation_stats_to_statsFragment2"
+            app:destination="@id/statsFragment2" />
+        <action
+            android:id="@+id/action_navigation_stats_to_navigation_prediction"
+            app:destination="@id/navigation_prediction" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment2"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.StatsFragment2"
+        android:label="Статистика"
+        tools:layout="@layout/fragment_stats2">
+        <action
+            android:id="@+id/action_statsFragment2_to_statsFragment3"
+            app:destination="@id/statsFragment3" />
+        <action
+            android:id="@+id/action_statsFragment2_to_navigation_stats"
+            app:destination="@id/navigation_stats" />
+        <action
+            android:id="@+id/action_statsFragment2_to_navigation_prediction"
+            app:destination="@id/navigation_prediction" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment3"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.StatsFragment3"
+        android:label="Статистика"
+        tools:layout="@layout/fragment_stats3">
+        <action
+            android:id="@+id/action_statsFragment3_to_statsFragment2"
+            app:destination="@id/statsFragment2" />
+        <action
+            android:id="@+id/action_statsFragment3_to_navigation_prediction"
+            app:destination="@id/navigation_prediction" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_prediction"
+        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.PredictionFragment"
+        android:label=" Прогноз на следующий месяц"
+        tools:layout="@layout/fragment_prediction" />
+    <!--    <fragment-->
+    <!--        android:id="@+id/statsFragment2"-->
+    <!--        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.StatsFragment2"-->
+    <!--        android:label="fragment_stats2"-->
+    <!--        tools:layout="@layout/fragment_stats2" >-->
+    <!--&lt;!&ndash;        <action&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/action_statsFragment2_to_statsFragment3"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:destination="@id/statsFragment3" />&ndash;&gt;-->
+    <!--&lt;!&ndash;        <action&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/action_statsFragment2_to_navigation_stats"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:destination="@id/navigation_stats" />&ndash;&gt;-->
+    <!--    </fragment>-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/statsFragment3"-->
+    <!--        android:name="com.example.individualresearchprojectbyiscandarovleonid.Fragments.StatsFragment3"-->
+    <!--        android:label="fragment_stats3"-->
+    <!--        tools:layout="@layout/fragment_stats3" >-->
+    <!--&lt;!&ndash;        <action&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/action_statsFragment3_to_statsFragment2"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:destination="@id/statsFragment2" />&ndash;&gt;-->
+    <!--    </fragment>-->
+</navigation>

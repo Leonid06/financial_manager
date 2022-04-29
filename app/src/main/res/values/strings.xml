@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Individual Research Project by Iscandarov Leonid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_button_name">Главная</string>
+    <string name="statistics_button_name">Статистика</string>
+    <string name="history_button_name">История</string>
+    <string name="amount_title">Сумма</string>
+    <string name="category_field_hint">999</string>
+    <string name="categoty_title">Категория</string>
+    <string name="button_title">Подтвердить</string>
+    <string name="name_title">Название</string>
+    <string name="add_category_button_name">+</string>
+    <string name="to_name_category_view_title">Назовите категорию</string>
+    <string-array name="categories">
+        <item>Еда</item>
+        <item>Продукты</item>
+        <item>Развлечения</item>
+        <item>Шоппинг</item>
+    </string-array>
+</resources>
